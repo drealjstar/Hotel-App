@@ -1,0 +1,48 @@
+
+.photo{
+height: 90vh;
+background-image: linear-gradient(to right bottom, rgb(184, 95, 107), rgb(114, 47, 55));
+margin-top: 145px;
+
+}
+
+.boxfile{
+    display: flex;
+justify-content: space-between;
+}
+
+.box11,
+.box22,
+.box33{
+height: 350px;
+width: 300px;
+background-color: blue;    
+margin-top: 70px;
+}
+
+.remark{
+    text-align: center;
+    padding-top: 30px;
+    color: whitesmoke;
+}
+
+.box11{
+    background-image: url("./room1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box22{
+    background-image: url("./room2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box33{
+    background-image: url("./room3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+

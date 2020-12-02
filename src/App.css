@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.headers{
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, rgba(114, 47, 55, 0.8), rgba(184, 95, 107, 0.8)), url(./sit.jpg);
+    background-size:cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page{
+    background-color: rgb(252, 249, 249);
+    color: rgb(53,53,119);
+    height: 140vh;
+    font-style: italic;
+    font-size: larger;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-two{
+   font-size: 50px;
+   font-weight: bold;
+   font-family: 'Courier New', Courier, monospace;
+   font-style: normal;
+   letter-spacing: 40px;
+   animation-name: moveLeft;
+   animation-duration: 3s;
+   animation-timing-function: ease-out;
+   color: whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-three{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    letter-spacing: 10px;
+    margin-top:10px ;
+    animation-name: moveRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+.list{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30px;
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-one{
+    color:white;
 }
+
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(10px);
+
+    }
+
+    100%{
+     opacity: 1;
+     transform: translate(0);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-10px);
+
+    }
+
+    100%{
+     opacity: 1;
+     transform: translate(0);
+    }
+}
+
